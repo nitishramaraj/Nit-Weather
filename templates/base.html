@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <title>Nit-Weather</title>
+</head>
+
+<body>
+    <div class="logo">
+        <img src="/static/final_logo.png" width="20%">
+    </div>
+    <div class="nav">
+
+        <ul>
+            <li><a href="{{url_for('index')}}">Home</a></li>
+            <li><a href="#">About Us</a></li>
+
+        </ul>
+    </div>
+
+    <footer>
+        <p id="footername">Nit-Weather</p>
+        <p id="logo">Owned By: NRJ Group</p>
+        <div class="social">
+            <a href=""><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <p id="copyright">&copy; Copyright 2021, NRJ Technologies</p>
+    </footer>
+
+
+    {% block content %}
+    {% endblock %}
+</body>
+
+
+
+</html>

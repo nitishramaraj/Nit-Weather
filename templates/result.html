@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="result">
+    <div class="container">
+        <div id="city_h">{{weather.city}}</div>
+            <!-- <img id="desc_img" src="https://openweathermap.org/img/w/{{weather.icon}}.png" alt="image-desc"> -->
+            <ul>
+                <li id= "res_label"><u>Current Temperature:</u></li>
+                <li id= "res_output">&nbsp&nbsp&nbsp{{weather.cur_temp}} &#8451</li>
+            </ul>
+            <ul>
+                <li id= "res_label"><u>Feels Like:</u></li>
+                <li id= "res_output">&nbsp&nbsp&nbsp{{weather.feels_like}} &#8451</li>
+            </ul>
+            <ul>
+                <li id= "res_label"><u>Maximum Temperature:</u></li>
+                <li id= "res_output">&nbsp&nbsp&nbsp{{weather.max_temp}} &#8451</li>
+            </ul>
+            <ul>
+                <li id= "res_label"><u>Minimum Temperature:</u></li>
+                <li id= "res_output">&nbsp&nbsp&nbsp&nbsp{{weather.min_temp}} &#8451</li>
+            </ul>
+            <ul>
+                <li id= "res_label"><u>All about today:</u></li>
+                <li id= "res_output_1" style="text-transform: capitalize;">&nbsp&nbsp&nbsp{{weather.description}}</li>
+            </ul>
+           
+
+            
+            
+
+    </div>
+
+
+</div>
+    {% endblock %}
